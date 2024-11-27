@@ -35,7 +35,20 @@ function isLeapYear(year) {
 const year = 2005; 
 console.log(isLeapYear(year));
 
+////////////////////////////////
+function ticketPricing(age) {
+    if (age <= 12) {
+        return "Ticket Price: $10";
+    } else if (age >= 13 && age <= 17) {
+        return "Ticket Price: $15";
+    } else {
+        return "Ticket Price: $20";
+    }
+}
 
+const age = parseInt(prompt("Enter your age:"));
+console.log(ticketPricing(age));
+/////////////////////////////////////
 function isPalindrome(str) {
     str = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase(); 
     if (str.length <= 1) return true; 
@@ -44,8 +57,8 @@ function isPalindrome(str) {
 }
 
 const word = "A man, a plan, a canal, Panama"; 
-console.log(Is "${word}" a palindrome? ${isPalindrome(word)});
-
+//console.log(Is "${word}" a palindrome? ${isPalindrome(word)});
+//////////////////////////////////
 
 function fibonacci(n) {
     if (n <= 1) return n; 
@@ -53,4 +66,4 @@ function fibonacci(n) {
 }
 
 const n = 8; 
-console.log(The ${n}th Fibonacci number is: ${fibonacci(n)});
+//console.log(The ${n}th Fibonacci number is: ${fibonacci(n)});
